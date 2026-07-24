@@ -29,3 +29,8 @@ memoryverse/backend/data/*
 .DS_Store
 Thumbs.db
 .idea/
+
+# Root Documentation & Spec Files
+/*.md
+!README.md
+
