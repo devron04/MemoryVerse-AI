@@ -1,0 +1,31 @@
+# Python / Virtual Environment
+venv/
+**/venv/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Node / Web
+node_modules/
+**/node_modules/
+**/dist/
+**/build/
+
+# Environment / Secrets
+.env
+.env.local
+.env.*.local
+*.env
+
+# Storage / Uploads / Local Data
+memoryverse/backend/uploads/*
+!memoryverse/backend/uploads/.gitkeep
+memoryverse/backend/data/*
+!memoryverse/backend/data/.gitkeep
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+.idea/

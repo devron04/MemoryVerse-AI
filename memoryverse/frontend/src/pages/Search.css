@@ -1,0 +1,118 @@
+/* Search.css — Dedicated Semantic Search View */
+
+.search-container {
+  padding: var(--space-8);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.search-header {
+  margin-bottom: var(--space-6);
+}
+
+.search-header h1 {
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  color: var(--text-primary);
+  margin-bottom: var(--space-1);
+}
+
+.search-header p {
+  color: var(--text-muted);
+  font-size: var(--text-sm);
+}
+
+.search-bar-row {
+  display: flex;
+  gap: var(--space-3);
+  margin-bottom: var(--space-6);
+}
+
+.search-bar-input {
+  flex: 1;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-hairline);
+  color: var(--text-primary);
+  padding: var(--space-3) var(--space-5);
+  border-radius: var(--radius-lg);
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  outline: none;
+}
+
+.search-bar-input:focus {
+  border-color: var(--accent-sage);
+  box-shadow: 0 0 15px var(--accent-sage-glow);
+}
+
+.search-submit-btn {
+  background: var(--accent-sage);
+  color: var(--bg-base);
+  border: none;
+  padding: 0 var(--space-6);
+  border-radius: var(--radius-lg);
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background var(--transition-fast);
+}
+
+.search-submit-btn:hover {
+  background: #7fb89b;
+}
+
+.search-results-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.search-result-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-hairline);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  transition: all var(--transition-normal);
+}
+
+.search-result-card:hover {
+  background: var(--bg-surface-raised);
+  border-color: var(--accent-sage);
+}
+
+.search-result-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-2);
+}
+
+.search-result-title {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  color: var(--text-primary);
+}
+
+.search-match-score {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--accent-sage);
+  background: var(--accent-sage-glow);
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--accent-sage);
+}
+
+.search-result-snippet {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  line-height: var(--leading-relaxed);
+  margin-bottom: var(--space-4);
+}
+
+.search-result-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
